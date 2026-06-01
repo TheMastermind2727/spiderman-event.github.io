@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premiere Event</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#ff2a2a;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.nav-links{
+    display:flex;
+    gap:15px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    padding:10px 18px;
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:8px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    background:#ff2a2a;
+    border-color:#ff2a2a;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:120px 20px 50px;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1100px;
+    width:100%;
+}
+
+.hero h1{
+    font-size:4rem;
+    font-weight:800;
+    margin-bottom:15px;
+    text-transform:uppercase;
+    color:white;
+}
+
+.hero h1 span{
+    color:#ff2a2a;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#d6d6d6;
+    margin-bottom:35px;
+}
+
+.trailer{
+    width:100%;
+    aspect-ratio:16/9;
+    margin-bottom:35px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(255,0,0,.35);
+}
+
+.trailer iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+.ticket-btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:22px 60px;
+    font-size:1.4rem;
+    font-weight:800;
+    text-transform:uppercase;
+    color:black;
+    background:linear-gradient(135deg,#FFD700,#FFC400);
+    border-radius:12px;
+    box-shadow:
+    0 0 20px rgba(255,215,0,.5),
+    0 0 50px rgba(255,215,0,.25);
+    transition:.3s;
+}
+
+.ticket-btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:
+    0 0 35px rgba(255,215,0,.9),
+    0 0 70px rgba(255,215,0,.4);
+}
+
+.secondary-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.secondary-buttons a{
+    text-decoration:none;
+    color:white;
+    padding:14px 28px;
+    background:#1c1c1c;
+    border:1px solid #333;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.secondary-buttons a:hover{
+    background:#ff2a2a;
+    border-color:#ff2a2a;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#888;
+    border-top:1px solid #222;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.ticket-btn{
+    width:100%;
+    max-width:350px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Premiere Event</div>
+
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="bookingpage.html">Booking</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1><span>Marvel</span> Premiere Event</h1>
+
+        <p>
+            Experience the ultimate cinematic premiere.
+            Watch the trailer, reserve your seats, and join fellow fans.
+        </p>
+
+        <div class="trailer">
+            <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+        <a href="bookingpage.html" class="ticket-btn">
+            🎟 GET TICKETS
+        </a>
+
+        <div class="secondary-buttons">
+            <a href="bookingpage.html">Book Now</a>
+            <a href="about.html">About Event</a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Premiere Event. All Rights Reserved.
+</footer>
+
+</body>
+</html>
